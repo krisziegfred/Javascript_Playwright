@@ -1,0 +1,42 @@
+1.	Functional UI Automation
+-	I have used playwright with JavaScript.
+-	Scenarios – I have created an end to end testing for the application
+o	Login to the application
+o	Scan the available items from the list
+o	Add the item into the cart
+o	Verify the item inside the car (exist or not exist).
+o	Checkout the item in the cart
+o	Verify order confirmation
+o	Verify order ID is correct.
+-	NOTES: I can’t cover the Edit, Delete, I don’t have time to do it, but that is very easy.
+
+2.	API Test Automation
+-	I have used a combination of postman and playwright to do the automation of API.
+-	Scenarios – I have created an end to end testing of the API.
+o	Login – POST
+o	Add the item into the cart – POST
+o	Create an Order – POST
+o	Retrieved the item from the list of orders – GET
+-	NOTES: I haven’t PUT and DELETE as I don’t have time to do it., but that is simple.
+
+3.	Test Plan /Documentation
+-	The test plan and Strategy is to cover the most important functionality of the application. 
+-	The automated test I have created is End to End Testing
+-	Outlining
+o	What is being tested – all the major functionality of the application
+o	Test coverage area – most important functionality, I haven’t cover the delete and edit as I don’t have time for it.
+o	Tools used and why – I have used playwright, it is free, so the company can save money for the license. It is also a very powerful tool which eliminated the flaky test due to some built.in functions.
+o	How to run the test – See section 5.
+
+4.	Bonus
+-	Integrate test script into a CI/CD pipelines: CI/CD pipelines work based on yaml file, we can use CI/CD pipeline with some available tools in the market like GitHub Actions, Jenkins and Azure DevOps for the CI/CD.
+-	Add visual test snapshots – I don’t recommend to use visual test snapshots as it is prone to error due to pixels problems…ect..sizes of browsers are different, problem when running in headless mode when run in the pipelines.
+
+5.	How to run the automated test. 
+-	Unzip the file and put it in your C drive.
+-	Open VS code and go to the location of the save files and open the folder.
+-	In VS code console…do the following.
+o	npx playwright test /tests/API_Test_Automation.spec.js --project=chromium: Execute this command in your VS code console. 
+o	npx playwright test /tests/UI_Functional_Test_Automation.spec.js --project=chromium –headed: Execute this command in your VS code console.
+6.	Questions: 
+-	If you have any questions, please reach out. 
