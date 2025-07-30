@@ -1,0 +1,12 @@
+How to run the test: 
+
+Install the following if you don't have it in your machine. 
+1. install latest Node.js and restart VS code. - Download Node.js if needed.
+2. install Playwright, Execute this command in VScode powershell.  - npm install --save-dev @playwright/test.
+
+-	Open VS code and go to the location of the save files and open the folder.
+-	In VS code console…do the following.
+o	
+npx playwright test /tests/API_Test_Automation.spec.js --project=chromium: Execute this command in your VS code console. 
+o	
+npx playwright test /tests/UI_Functional_Test_Automation.spec.js --project=chromium –headed: Execute this command in your VS code console.
