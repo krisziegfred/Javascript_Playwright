@@ -1,42 +1,89 @@
-1.	Functional UI Automation
--	I have used playwright with JavaScript.
--	Scenarios – I have created an end to end testing for the application
-o	Login to the application
-o	Scan the available items from the list
-o	Add the item into the cart
-o	Verify the item inside the car (exist or not exist).
-o	Checkout the item in the cart
-o	Verify order confirmation
-o	Verify order ID is correct.
--	NOTES: I can’t cover the Edit, Delete, I don’t have time to do it, but that is very easy.
+# Javascript Playwright Automation
 
-2.	API Test Automation
--	I have used a combination of postman and playwright to do the automation of API.
--	Scenarios – I have created an end to end testing of the API.
-o	Login – POST
-o	Add the item into the cart – POST
-o	Create an Order – POST
-o	Retrieved the item from the list of orders – GET
--	NOTES: I haven’t PUT and DELETE as I don’t have time to do it., but that is simple.
+This repository contains end-to-end UI and API automation tests using [Playwright](https://playwright.dev/) with JavaScript.  
+**Links and additional documentation are also available in this GitHub repository.**
 
-3.	Test Plan /Documentation
--	The test plan and Strategy is to cover the most important functionality of the application. 
--	The automated test I have created is End to End Testing
--	Outlining
-o	What is being tested – all the major functionality of the application
-o	Test coverage area – most important functionality, I haven’t cover the delete and edit as I don’t have time for it.
-o	Tools used and why – I have used playwright, it is free, so the company can save money for the license. It is also a very powerful tool which eliminated the flaky test due to some built.in functions.
-o	How to run the test – See section 5.
+---
 
-4.	Bonus
--	Integrate test script into a CI/CD pipelines: CI/CD pipelines work based on yaml file, we can use CI/CD pipeline with some available tools in the market like GitHub Actions, Jenkins and Azure DevOps for the CI/CD.
--	Add visual test snapshots – I don’t recommend to use visual test snapshots as it is prone to error due to pixels problems…ect..sizes of browsers are different, problem when running in headless mode when run in the pipelines.
+## 1. Functional UI Automation
 
-5.	How to run the automated test. 
--	Unzip the file and put it in your C drive.
--	Open VS code and go to the location of the save files and open the folder.
--	In VS code console…do the following.
-o	npx playwright test /tests/API_Test_Automation.spec.js --project=chromium: Execute this command in your VS code console. 
-o	npx playwright test /tests/UI_Functional_Test_Automation.spec.js --project=chromium –headed: Execute this command in your VS code console.
-6.	Questions: 
--	If you have any questions, please reach out. 
+- **Framework:** Playwright with JavaScript
+- **Scenarios Covered:**
+  - Login to the application
+  - Scan available items from the list
+  - Add an item to the cart
+  - Verify the item inside the cart (existence check)
+  - Checkout the item in the cart
+  - Verify order confirmation
+  - Verify order ID is correct
+- **Notes:**  
+  Edit and Delete functionalities are not covered due to time constraints, but can be easily added.
+
+---
+
+## 2. API Test Automation
+
+- **Tools Used:** Postman and Playwright
+- **Scenarios Covered:**
+  - Login – `POST`
+  - Add item to cart – `POST`
+  - Create an order – `POST`
+  - Retrieve items from the list of orders – `GET`
+- **Notes:**  
+  `PUT` and `DELETE` operations are not included due to time constraints, but are straightforward to implement.
+
+---
+
+## 3. Test Plan & Documentation
+
+- **Strategy:**  
+  Focus on covering the most important functionalities of the application with end-to-end automated tests.
+- **Coverage:**
+  - Major functionalities are tested.
+  - Edit and Delete are not covered due to time constraints.
+- **Tools Used:**  
+  Playwright (free, powerful, and reduces flaky tests with built-in features).
+- **How to Run the Tests:**  
+  See [How to Run the Automated Tests](#how-to-run-the-automated-tests) below.
+
+---
+
+## 4. Bonus
+
+- **CI/CD Integration:**  
+  Test scripts can be integrated into CI/CD pipelines using YAML files with tools like GitHub Actions, Jenkins, or Azure DevOps.
+- **Visual Test Snapshots:**  
+  Not recommended due to potential issues with pixel differences, browser sizes, and headless mode in pipelines.
+
+---
+
+## 5. How to Run the Automated Tests
+
+1. **Clone or download** this repository and extract it to your `C:` drive.
+2. **Open VS Code** and open the project folder.
+3. **Install dependencies:**
+   ```sh
+   npm install
+   ```
+4. **Run tests using the VS Code terminal:**
+   - **API Test:**
+     ```sh
+     npx playwright test tests/API_Test_Automation.spec.js --project=chromium
+     ```
+   - **UI Functional Test:**
+     ```sh
+     npx playwright test tests/UI_Functional_Test_Automation.spec.js --project=chromium --headed
+     ```
+
+---
+
+## 6. Links
+
+- [Playwright Documentation](https://playwright.dev/)
+- [GitHub Repository](https://github.com/krisziegfred/Javascript_Playwright)
+
+---
+
+## 7. Questions
+
+If you have any questions, please reach out via the repository’s Issues section or contact me directly.
